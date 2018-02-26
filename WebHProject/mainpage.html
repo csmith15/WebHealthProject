@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Main Page</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+<style>
+.bg-4 { 
+    background-color: #4d0066;
+    color: #ffffff;
+}
+    
+.jumbotron { 
+    background-color: #4d0066;
+    color: #ffffff;
+    
+}
+
+.logo-small {
+    color: #737373;
+    font-size: 50px;
+}   
+</style>
+        
+<link rel="stylesheet" href="styles.css">
+    
+</head>
+
+    
+<body> <!-- Start of main page code -->
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">Cancer Connect</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="mainpage.html">Home</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="connect.html">Connect</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Messages</a></li>
+      <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> MyProfile</a></li>
+      <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+  
+  <div class="jumbotron text-center">
+  <h1>Explore</h1>
+  <h2>Navigate the site and see what we have to offer</h2>
+  </div><br><br>
+
+<div class="container-fluid text-center">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-user logo-small"></span>
+      <h3>User Profile</h3>
+      <p>Detail and display information about yourself</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-calendar logo-small"></span>
+      <h3>Calendar</h3>
+      <p>A personal calendar to track important dates</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-link logo-small"></span>
+      <h3>Connect</h3>
+      <p>Connect with other users and interact</p>
+    </div>
+    </div>
+    <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h3>Coming Soon</h3>
+      <p></p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h3>Coming Soon</h3>
+      <p>New and useful tools to come in the future</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h3>Coming Soon</h3>
+      <p></p>
+    </div>
+  </div>
+</div><br><br>  
+    
+<div class="container-fluid" style ='background-color:#737373;'>
+  <h2 class="text-center" style="color:#ffffff;">CONTACT US</h2>
+  <div class="row">
+    <div class="col-sm-3">
+      <h4 style="color:#ffffff;"><br>Should you have any concerns, suggestions or simply wish to express your feelings about the site please don't hesitate to contact us. We strive to view and respond to your messages as soon as possible.</h4>
+    </div>
+    <div class="col-sm-9">
+      <div class="row">
+        <div class="col-sm-4 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-4 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+       <div class="col-sm-8"> 
+      <textarea class="form-control" id="comments" name="comments" placeholder="Message" rows="5" cols="100"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+        </div>  
+    </div>
+  </div>
+</div>  
+       
+<footer class="container-fluid bg-4 text-center">
+  <p>COMP-4310/5413 Project 2018</p> 
+</footer>  
+    
+</body>
+</html>
