@@ -8,20 +8,41 @@
     
 <style>
 .bg-4 { 
-    background-color: #4d0066;
+    background-color: #66c2ff;
     color: #ffffff;
 }
     
 .jumbotron { 
-    background-color: #4d0066;
+    background-color: #66c2ff;
     color: #ffffff;
     
 }
 
 .logo-small {
-    color: #737373;
+    color: #66c2ff;
     font-size: 50px;
-}   
+}
+    
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("bg1.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+      
 </style>
         
 <link rel="stylesheet" href="styles.css">
@@ -31,6 +52,7 @@
     
 <body> <!-- Start of main page code -->
 
+<div class="bg"> 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -40,6 +62,8 @@
       <li class="active"><a href="mainpage.html">Home</a></li>
       <li><a href="schedule.html">Schedule</a></li>
       <li><a href="connect.html">Connect</a></li>
+      <li><a href="boards.html">Boards</a></li>
+      <li><a href="learn.html">Learn</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Messages</a></li>
@@ -52,53 +76,59 @@
   <div class="jumbotron text-center">
   <h1>Explore</h1>
   <h2>Navigate the site and see what we have to offer</h2>
-  </div><br><br>
-
-<div class="container-fluid text-center">
+  </div>
+   
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+<div class="container-fluid text-center" style ='background-color:#f2f2f2; padding:40px;' >
   <div class="row">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-user logo-small"></span>
-      <h3>User Profile</h3>
-      <p>Detail and display information about yourself</p>
+      <h3 style="color:#808080;">User Profile</h3>
+      <p style="color:#808080;">Detail and display information about yourself</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-calendar logo-small"></span>
-      <h3>Calendar</h3>
-      <p>A personal calendar to track important dates</p>
+      <h3 style="color:#808080;">Schedule</h3>
+      <p style="color:#808080;">A personal calendar to track important dates</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-link logo-small"></span>
-      <h3>Connect</h3>
-      <p>Connect with other users and interact</p>
+      <h3 style="color:#808080;">Connect</h3>
+      <p style="color:#808080;">Connect with other users and interact</p>
     </div>
     </div>
     <br><br>
   <div class="row">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h3>Coming Soon</h3>
-      <p></p>
+      <span class="glyphicon glyphicon-list-alt logo-small"></span>
+      <h3 style="color:#808080;">Message Boards</h3>
+      <p style="color:#808080;">See what others are saying</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-book logo-small"></span>
+      <h3 style="color:#808080;">Learn</h3>
+      <p style="color:#808080;">Further your knowledge and understanding of cancer</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h3>Coming Soon</h3>
-      <p>New and useful tools to come in the future</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h3>Coming Soon</h3>
-      <p></p>
+      <h3 style="color:#808080;">Coming Soon</h3>
+      <p style="color:#808080;">New and useful sections to come in the future</p>
     </div>
   </div>
-</div><br><br>  
-    
-<div class="container-fluid" style ='background-color:#737373;'>
-  <h2 class="text-center" style="color:#ffffff;">CONTACT US</h2>
-  <div class="row">
-    <div class="col-sm-3">
-      <h4 style="color:#ffffff;"><br>Should you have any concerns, suggestions or simply wish to express your feelings about the site please don't hesitate to contact us. We strive to view and respond to your messages as soon as possible.</h4>
+</div><br> 
+        </div>
+   <div class="col-sm-1"></div>
     </div>
-    <div class="col-sm-9">
+    
+<div class="container-fluid" style ='background-color:#f2f2f2;'>
+  <h2 class="text-center" style="color:#808080;">CONTACT US</h2>
+  <div class="row">
+    <div class="col-sm-5">
+        <h4 style="color:#808080;"><br><center>Should you have any concerns, suggestions or simply wish to express your feelings about the site please don't hesitate to contact us. We strive to view and respond to your messages as soon as possible.</center></h4>
+    </div>
+    <div class="col-sm-7">
       <div class="row">
         <div class="col-sm-4 form-group">
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
@@ -117,8 +147,41 @@
         </div>  
     </div>
   </div>
-</div>  
-       
+</div>
+    
+<div class="container-fluid bg-3" style ='background-color:#f2f2f2;'> 
+   <div class="row"> 
+       <div class="col-sm-2">
+   </div>
+       <div class="col-sm-8">
+           <h3 class="text-center" style="color:#808080;"><u>About the Developers</u></h3> 
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#home">Connor</a></li>
+  <li><a data-toggle="tab" href="#menu1">Jasminder</a></li>
+  <li><a data-toggle="tab" href="#menu2">Jafar</a></li>
+</ul><br><br>
+
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+    <h2 style="color:#808080;">Connor Smith</h2>
+    <p style="color:#808080;">Connor Smith is a third year Computer Science student at Lakehead University who was born and raised in Dryden Ontario.</p>
+  </div>
+  <div id="menu1" class="tab-pane fade">
+    <h2 style="color:#808080;">Jasminder Singh Issar</h2>
+    <p style="color:#808080;"></p>
+  </div>
+  <div id="menu2" class="tab-pane fade">
+    <h2 style="color:#808080;">Jafar Alqallaf</h2>
+    <p style="color:#808080;"></p>
+  </div>
+</div>
+       </div>
+   <div class="col-sm-2">
+   </div>
+    </div>
+    </div>     
+    
+    </div>      
 <footer class="container-fluid bg-4 text-center">
   <p>COMP-4310/5413 Project 2018</p> 
 </footer>  
